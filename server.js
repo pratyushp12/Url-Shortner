@@ -6,7 +6,7 @@ const shortid = require("shortid");
 
 const app = express();
 
-mongoose.connect("mongodb://localhost:27017/urlShortner",{useNewUrlParser:true, useUnifiedTopology:true});
+mongoose.connect("mongodb+srv://admin-pratyush:Test-123@cluster0.caesg.mongodb.net/urlShortner",{useNewUrlParser:true, useUnifiedTopology:true});
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
